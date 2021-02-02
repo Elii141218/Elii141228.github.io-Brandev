@@ -1,0 +1,49 @@
+
+:root {
+    --col-width: 8.33333333333%;
+  }
+  .container {
+    max-width: 950px;
+    margin: auto;
+    padding: 50px;
+    font-size: 14px;
+  } 
+  .row {
+    display: flex;
+  }
+  .col-1 {
+    width: calc(var(--col-width) * 4);
+  }
+  .col-2 {
+    width: calc(var(--col-width) * 8);
+  }
+  .col-3 {
+    width: calc(var(--col-width) * 8);
+    margin-left: 15px;
+  }
+  .col-4 {
+    width: calc(var(--col-width) * 4);
+  }
+  .col-4 img{
+    margin-left: 175px;
+  }
+  .col-5 {
+    width: calc(var(--col-width) * 4);
+  }
+  .col-6 {
+    width: calc(var(--col-width) * 8);
+  }
+
+  [class*="col-"] { /* selecciona los atributos class cuyos valores tenga una subcadena col-*/
+    padding: 10px;
+  }
+  @media (max-width: 900px) {
+    .row{
+      display: inherit;
+    }
+    [class*="col-"] { /* selecciona los atributos class cuyos valores tenga una subcadena col-*/
+      padding: 10px;
+      width: 100%
+    }
+  }
+/*container>row>column*/

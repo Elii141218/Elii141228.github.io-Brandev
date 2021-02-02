@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Nixie+One&display=swap');
+/*-----------variables*/
+:root{
+    --rose-color:#FFDDD2;
+    --white-color: white;
+    --black-color: black; 
+/*tipografia*/
+    --normal:12px;
+/*box shadow=--box: 0px 0 14px 1px var(--black-color)*/
+/*espaciado*/
+    --space:10px;  
+    --space2:5px;
+}
+/*-----------termina variables*/
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--normal);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+nav{
+    display: flex;
+    background-color: var(--rose-color);
+    padding: 5px;
+    color: var(--black-color);
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    padding-right: 20px;
+    list-style: none;
+}
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+nav a{
+    color: var(--black-color);
+    text-decoration: none;
+    text-align: center;
+}
+nav li a:hover{
+    color: var(--white-color);
+}
+/*---------------main section*/
+.main_section{
+    padding: 10%;
+    
+    text-align: center;
+}
+.products{
+    background-image: url("images/markdev1.png");
+    height: 255px;
+    background-size: cover;
+    background-position: center top;
+    padding: 10%;
+    display: flex;
+}
+.product{
+    padding: 70px;
+    margin-top:-270px
+}
+.product .content{
+    background-color: var(--white-color);
+    padding: 20px;
+    box-shadow: 0px 0 14px 1px var(--black-color)
+}
+.img_content{
+    text-align: center;
+}
+.main-button{
+    background-color: var(--rose-color);
+    width: 100%;
+    padding: 10px;
+    font-size: var(--normal);
+    border:0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.main-button:hover{
+   background-color: #e8c9e1;
+}
+.qualitys{
+    padding: var(--space);
+    display: flex;
+    height: 100px;  
+}
+.quality{
+    padding: 125px;
+    text-align: center; 
+}
+.mention_section{
+    padding: 20px;
+    margin-top: 350px;
+    text-align: center;
+}
+.mention{
+    padding: 2px;
+    text-align: left; 
+}
+.mentions{
+    padding: var(--space2);
+    text-align: center;
+    display: flex;
+}
+.mention .content{
+    background-color: var(--white-color);
+    padding: var(--space2);
+    margin: var(--space2)   ;   
+    box-shadow: 0px 0px 1px 0px var(--black-color);
+}
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 1px 0px var(--black-color);
+    padding: 10px; 
+    margin-left: 20%;
+    margin-right: -25%;
+}
+.modulo_pago h3 p {
+    white-space: 100%
+}
+.modulo_pago form{
+    background-color: var(--white-color);
+    padding: 5px;
+    padding-right: 250px;
+    
+}
+.data{
+    margin-top: var(--space);
+    width: 250%;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+   
+}
+.modulo_pago_images{
+    margin-left: -70px;
+    padding: 10px;
+}
+label{
+    font-size: var(--normal) ;
+    padding-bottom: var(--space2);
+}
+form .main-btn{
+    margin-top: 10px;
+    width: 250%;
+    background-color: var(--rose-color);
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    height: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+footer{
+    display: flex;
+    background-color: var(--rose-color);
+    color: var(--black-color);
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.contact a {
+    color: gray;
+}
